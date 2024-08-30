@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.otf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ASCEND" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="42"/>
+        </scene>
+        <!--Under ConstructionVC-->
+        <scene sceneID="DIK-lo-ceF">
+            <objects>
+                <viewController storyboardIdentifier="UnderConstructionVC" id="f8A-OS-gVJ" customClass="UnderConstructionVC" customModule="ASCEND" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQa-Ga-Lfm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegisterBG" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-AC-BQ2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zqZ-O2-Aah">
+                                <rect key="frame" x="30" y="212.5" width="354" height="389.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-mZ-Q9Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="354"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="r8W-mZ-Q9Q" secondAttribute="height" id="U8i-Ty-xzd"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnY-K3-oA2">
+                                        <rect key="frame" x="0.0" y="364" width="354" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.0039215686269999999" blue="0.73725490199999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6d1-IZ-uKs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="I3d-AC-BQ2" secondAttribute="bottom" id="FPy-uR-KLf"/>
+                            <constraint firstAttribute="trailing" secondItem="I3d-AC-BQ2" secondAttribute="trailing" id="GdD-FB-a5h"/>
+                            <constraint firstItem="zqZ-O2-Aah" firstAttribute="centerX" secondItem="QQa-Ga-Lfm" secondAttribute="centerX" id="K5r-oi-pAo"/>
+                            <constraint firstItem="I3d-AC-BQ2" firstAttribute="leading" secondItem="QQa-Ga-Lfm" secondAttribute="leading" id="Rwz-dK-whw"/>
+                            <constraint firstItem="zqZ-O2-Aah" firstAttribute="leading" secondItem="QQa-Ga-Lfm" secondAttribute="leading" constant="30" id="dep-WO-GBj"/>
+                            <constraint firstItem="I3d-AC-BQ2" firstAttribute="top" secondItem="QQa-Ga-Lfm" secondAttribute="top" id="pfo-uf-6Iz"/>
+                            <constraint firstItem="zqZ-O2-Aah" firstAttribute="centerY" secondItem="QQa-Ga-Lfm" secondAttribute="centerY" constant="-40.75" id="sMm-iv-QCF"/>
+                            <constraint firstAttribute="trailing" secondItem="zqZ-O2-Aah" secondAttribute="trailing" constant="30" id="ypd-10-rKT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="r8W-mZ-Q9Q" id="j3z-Km-FNS"/>
+                        <outlet property="descLabel" destination="CnY-K3-oA2" id="q8i-aV-6z2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4n-w2-6a8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RegisterBG" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

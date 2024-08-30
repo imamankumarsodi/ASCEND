@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.otf">
+            <string>Poppins-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PersonalAsessmentTableViewCell" id="m5w-tR-QXp" customClass="PersonalAsessmentTableViewCell" customModule="ASCEND" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5w-tR-QXp" id="2dA-BQ-jh6">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x81-uA-pT9">
+                        <rect key="frame" x="15" y="37.5" width="10" height="10"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Mkk-9Q-Ej5"/>
+                            <constraint firstAttribute="height" constant="10" id="fsE-99-ppd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-ch-Am1">
+                        <rect key="frame" x="40" y="5" width="364" height="75"/>
+                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kyH-ch-Am1" firstAttribute="leading" secondItem="x81-uA-pT9" secondAttribute="trailing" constant="15" id="6Sy-d6-tej"/>
+                    <constraint firstItem="x81-uA-pT9" firstAttribute="leading" secondItem="2dA-BQ-jh6" secondAttribute="leading" constant="15" id="JGL-9O-mVE"/>
+                    <constraint firstItem="kyH-ch-Am1" firstAttribute="top" secondItem="2dA-BQ-jh6" secondAttribute="top" constant="5" id="fWK-ka-Ngw"/>
+                    <constraint firstItem="x81-uA-pT9" firstAttribute="centerY" secondItem="2dA-BQ-jh6" secondAttribute="centerY" id="icu-6F-RHg"/>
+                    <constraint firstAttribute="bottom" secondItem="kyH-ch-Am1" secondAttribute="bottom" constant="5" id="kNC-ym-hfh"/>
+                    <constraint firstAttribute="trailing" secondItem="kyH-ch-Am1" secondAttribute="trailing" constant="12" id="r10-lB-bir"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dotView" destination="x81-uA-pT9" id="Nqm-BA-T0r"/>
+                <outlet property="titleLabel" destination="kyH-ch-Am1" id="heY-RD-yB7"/>
+            </connections>
+            <point key="canvasLocation" x="-37.681159420289859" y="64.620535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
